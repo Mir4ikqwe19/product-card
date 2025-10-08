@@ -1,0 +1,106 @@
+* {
+  font-family: Montserrat, Arial;
+  font-weight: 400;
+  color: #515076;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #515076;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.product-catalog-image {
+  background-image: url("/assets/background-flowers.svg");
+  background-position-x: 201px;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position-y: -75px;
+}
+
+.title {
+  font-size: 70px;
+  line-height: 78px;
+  text-align: center;
+  margin-top: 220px;
+}
+
+.product_card {
+  padding: 25px;
+  width: 340px;
+  height: 573px;
+  box-shadow: 2px 2px 10px 0px #5150761A;
+  background-color: #F7F7FA;
+}
+
+.cards-container {
+  width: auto;
+  justify-content: center;
+  height: 1191px;
+  display: flex;
+  margin: 110px 85px 116px 85px;
+  gap: 45px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skin-type {
+  display: block;
+  color: #A5A3B9;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.product-name {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.compound {
+  display: block;
+  margin: 15px 0px 5px 0px;
+}
+
+.product-composition {
+  margin: 0px 0px 25px 1px;
+}
+
+.product-composition-item {
+  margin-bottom: 5px;
+}
+
+.product-card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card-price-label {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-card-price-value {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
