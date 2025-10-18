@@ -2,7 +2,6 @@
 
 const firstCard = document.querySelector('.product_card');
 const changeColorCardButton = document.querySelector('#change-card-color-button');
-const lilacColorHash = '#C3C2FF';
 const deepPurpleColorHash = '#432A73';
 
 changeColorCardButton.addEventListener('click', () => {
@@ -12,15 +11,16 @@ changeColorCardButton.addEventListener('click', () => {
 // Покраска всех карточек
 
 const allCardList = document.querySelectorAll('.product_card');
-const changeAllCardsColor = document.querySelector('#change-color-all-cards-btn');
+const changeAllCardsColorButton = document.querySelector('#change-color-all-cards-button');
+const lilacColorHash = '#C3C2FF';
 
-changeAllCardsColor.addEventListener('click', () => {
+changeAllCardsColorButton.addEventListener('click', () => {
   allCardList.forEach((card) => card.style.backgroundColor = lilacColorHash)
 });
 
 // Открываем гугл
 
-const openGooglePageButton = document.querySelector('#open-google-page-btn');
+const openGooglePageButton = document.querySelector('#open-google-page-button');
 
 openGooglePageButton.addEventListener('click', openGoogle);
 
@@ -45,7 +45,7 @@ pageTitle.addEventListener('mouseenter', () => {
 
 // Задачка со сменой цветов у кнопки
 
-const multiColorButton = document.querySelector('.multi-colored-btn');
+const multiColorButton = document.querySelector('.multi-colored-button');
 
 if (multiColorButton) {
   multiColorButton.addEventListener('click', () => {

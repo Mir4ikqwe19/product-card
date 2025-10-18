@@ -163,7 +163,7 @@ ul li::before {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.open-google-btn {
+.open-google-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,16 +176,16 @@ ul li::before {
   cursor: pointer;
 }
 
-.open-google-btn:hover {
+.open-google-button:hover {
   background-color: #434261;
 }
 
-.open-google-btn:active {
+.open-google-button:active {
   transform: scale(0.96);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.multi-colored-btn {
+.multi-colored-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,7 +198,7 @@ ul li::before {
   cursor: pointer;
 }
 
-.multi-colored-btn:active{
+.multi-colored-button:active{
   transform: scale(0.96);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
