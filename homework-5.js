@@ -1,11 +1,11 @@
 /* Задача №1 - создать функцию которая принимает 2 параметра: 
 город и температуру, и выводит сообщение в консоль "Сейчас в X температура - Y градусов по цельсию" */
 
-const cityTemperature = (city, temperature) => {
+const showCityTemperature = (city, temperature) => {
   console.log(`"Сейчас в ${city} температура - ${temperature} градусов по Цельсию"`)
 };
 
-cityTemperature('Каспийске', 16);
+showCityTemperature('Каспийске', 16);
 
 /* Здача №2 - Создать переменную, которая хранит в себе скорость звука.
 Создать функцию, которая принимает 1 параметр - скорость, внтури функции происходит проверка:
@@ -13,17 +13,17 @@ cityTemperature('Каспийске', 16);
 "Дозвуковая скорость", если равна - "Скорость звука"*/
 
 const SOUND_SPEED = 1235; 
-// Влад, не бей, я просто решил побаловаться с названием функции, звучит прикольно, на работе так не сделаю чес слово :D
-function speedCapctha(speed) {
+
+function checkSoundSpeed(speed) {
   if (SOUND_SPEED < speed) {
     console.log("Сверхзвуковая скорость")
   } else if(SOUND_SPEED === speed) {
     console.log("Скорость звука")
-  } else if (SOUND_SPEED > speed) {
+  } else {
     console.log("Дозвуковая скорость")
   }
 };
- speedCapctha(1236);
+ checkSoundSpeed(1236);
 
  /* Задание №3 - Создать переменную №1, которая содержит продукт и переменную №2, которая содержит
  его цену. Далее создаём функцию, которая принимает 1 параметр - текущий бюджет, внутри функции происходит проверка:
@@ -33,15 +33,15 @@ function speedCapctha(speed) {
  const engine = 'Biturbo V8';
  const engineCost = 4700;
 
- const engineSelling = (finances) => {
-  if (finances > engineCost) {
+ const buyEngine = (price) => {
+  if (price = engineCost) {
     console.log(`"${engine} приобритен. Спасибо за покупку!"`)
-  } else if (finances < engineCost) {
-    const canBuyCalculate = engineCost - finances
+  } else if (price < engineCost) {
+    const canBuyCalculate = engineCost - price
     console.log(`"Вам нехватает ${canBuyCalculate}$, пополните баланс."`)
   }
  };
- engineSelling(4800);
+ buyEngine(4800);
 
  // Задание №6 - Создать 1 функцию и наименовать её по своему усмотрению
 
@@ -50,12 +50,12 @@ function speedCapctha(speed) {
     console.log('У вас получился вкусный кофе')
   } else if (grinding < 103) {
     console.log('Меняй помол бро, кислый')
-  } else if (grinding > 103) {
+  } else {
     console.log('Меняй помол бро, горький')
   }
  };
 
- coffeTaste(103);
+ coffeTaste(104);
 
  // Задача №7 - Создать 3 переменные и наименовать их по своему усмотрению
 
