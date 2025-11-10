@@ -14,7 +14,7 @@ showCityTemperature('Каспийске', 16);
 
 const SOUND_SPEED = 1235; 
 
-function checkSoundSpeed(speed) {
+function compareSoundSpeed(speed) {
   if (SOUND_SPEED < speed) {
     console.log("Сверхзвуковая скорость")
   } else if(SOUND_SPEED === speed) {
@@ -23,29 +23,29 @@ function checkSoundSpeed(speed) {
     console.log("Дозвуковая скорость")
   }
 };
- checkSoundSpeed(1236);
+compareSoundSpeed(1236);
 
- /* Задание №3 - Создать переменную №1, которая содержит продукт и переменную №2, которая содержит
- его цену. Далее создаём функцию, которая принимает 1 параметр - текущий бюджет, внутри функции происходит проверка:
- если бюджет превышает цену товара - выводим лог "(название товара) приобретён. Спасибо за покупку!", если нет -
- обсчитываем разницу и выводим лог "Вам не хватает X$, пополните баланс". */
+/* Задание №3 - Создать переменную №1, которая содержит продукт и переменную №2, которая содержит
+его цену. Далее создаём функцию, которая принимает 1 параметр - текущий бюджет, внутри функции происходит проверка:
+если бюджет превышает цену товара - выводим лог "(название товара) приобретён. Спасибо за покупку!", если нет -
+обсчитываем разницу и выводим лог "Вам не хватает X$, пополните баланс". */
 
- const engine = 'Biturbo V8';
- const engineCost = 4700;
+const engine = 'Biturbo V8';
+const engineCost = 4700;
 
- const buyEngine = (price) => {
+const buyEngine = (price) => {
   if (price = engineCost) {
     console.log(`"${engine} приобритен. Спасибо за покупку!"`)
   } else if (price < engineCost) {
     const canBuyCalculate = engineCost - price
     console.log(`"Вам нехватает ${canBuyCalculate}$, пополните баланс."`)
   }
- };
- buyEngine(4800);
+};
+buyEngine(4800);
 
- // Задание №6 - Создать 1 функцию и наименовать её по своему усмотрению
+// Задание №6 - Создать 1 функцию и наименовать её по своему усмотрению
 
- const coffeTaste = (grinding) => {
+const coffeTaste = (grinding) => {
   if (grinding === 103) {
     console.log('У вас получился вкусный кофе')
   } else if (grinding < 103) {
@@ -53,12 +53,12 @@ function checkSoundSpeed(speed) {
   } else {
     console.log('Меняй помол бро, горький')
   }
- };
+};
 
- coffeTaste(104);
+coffeTaste(104);
 
- // Задача №7 - Создать 3 переменные и наименовать их по своему усмотрению
+// Задача №7 - Создать 3 переменные и наименовать их по своему усмотрению
 
- const myFavoriteBook = 'Эрих Мария Ремарк - Триумфальная Арка'
- const HUMAN_CIRCULATORY_SYSTEM = '100000 км'
- const mostDangerousPredatorUnderwater = 'Orca'
+const myFavoriteBook = 'Эрих Мария Ремарк - Триумфальная Арка'
+const HUMAN_CIRCULATORY_SYSTEM = '100000 км'
+const mostDangerousPredatorUnderwater = 'Orca'
