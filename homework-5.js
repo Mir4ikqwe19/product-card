@@ -14,7 +14,7 @@ showCityTemperature('Каспийске', 16);
 
 const SOUND_SPEED = 1235; 
 
-function compareSoundSpeed(speed) {
+function compareSpeed(speed) {
   if (SOUND_SPEED < speed) {
     console.log("Сверхзвуковая скорость")
   } else if(SOUND_SPEED === speed) {
@@ -23,7 +23,7 @@ function compareSoundSpeed(speed) {
     console.log("Дозвуковая скорость")
   }
 };
-compareSoundSpeed(1236);
+compareSpeed(1236);
 
 /* Задание №3 - Создать переменную №1, которая содержит продукт и переменную №2, которая содержит
 его цену. Далее создаём функцию, которая принимает 1 параметр - текущий бюджет, внутри функции происходит проверка:
@@ -45,7 +45,7 @@ buyEngine(4800);
 
 // Задание №6 - Создать 1 функцию и наименовать её по своему усмотрению
 
-const coffeTaste = (grinding) => {
+const makeCoffe = (grinding) => {
   if (grinding === 103) {
     console.log('У вас получился вкусный кофе')
   } else if (grinding < 103) {
@@ -55,7 +55,7 @@ const coffeTaste = (grinding) => {
   }
 };
 
-coffeTaste(104);
+makeCoffe(104);
 
 // Задача №7 - Создать 3 переменные и наименовать их по своему усмотрению
 
