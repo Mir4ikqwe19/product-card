@@ -54,7 +54,7 @@ if (multiColorButton) {
     if(isActive) {
       multiColorButton.style.backgroundColor = '#374366';
     } else {
-      multiColorButton.style.backgroundColor ='#4A0C35'
+      multiColorButton.style.backgroundColor ='#4A0C35';
     }
   });
 }
