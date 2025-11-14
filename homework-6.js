@@ -21,15 +21,14 @@ const carInfo = {
   yearOfIssue: 1996,
   color: 'Black',
   gearShift: 'Manual',
-  carOwner: ''
 };
 
-carInfo.carOwner = carInfo;
+carInfo.carOwner = userInfo;
 
 /* 3. Написать функцию принимающую объект из пункта №2, которая будет проверять есть ли
 свойство макс. скорость, если нет - добавляет его, если есть - ничего не делает*/
 
-const compareMaxSpeed = car => {
+const checkMaxSpeed = car => {
   if (car !== carInfo.maxSpeed) {
     carInfo.maxSpeed = '240 km/h';
   } else {
@@ -37,16 +36,16 @@ const compareMaxSpeed = car => {
   }
 };
 
-compareMaxSpeed(carInfo);
+checkMaxSpeed(carInfo);
 
 /* 4. Написать функцию, которая получает первым аргументом - объект,
 а вторым аргументом - свойство объекта, которое надо вывести и выводит его значение. */
 
-function getObjectArguments (object, property) {
-  console.log(object[property])
+function getObjectProperty(object, property) {
+  return console.log(object[property])
 };
 
-getObjectArguments(carInfo,"carModel");
+getObjectProperty(carInfo, "carModel");
 
 /* 5. Создать массив который содержит названия продуктов(просто строки) */
 
@@ -127,10 +126,4 @@ const allBookList = [...classicBookList, ...fantasyBookList]
 и в зависимости от года выпуска книги (или какой-то логики, связанной с вашей сущностью), устанавливаем true или false.
 если книга выпущена позже 2000 года, устанавливаем true (да, это редкий), нет - false (значит это не редкий). */
 
-const isRareBook = allBookList.map(object => {
-  if (object.yearOfIssue >= 2000) {
-    return object.isRare = 'да это редкий'
-  }else {
-    return object.isRare = 'нет это не редкий'
-  }
-});
+const isRareBook = allBookList.map(object => {return object.yearOfIssue >= 2000 ? true : false})
