@@ -126,4 +126,4 @@ const allBookList = [...classicBookList, ...fantasyBookList]
 и в зависимости от года выпуска книги (или какой-то логики, связанной с вашей сущностью), устанавливаем true или false.
 если книга выпущена позже 2000 года, устанавливаем true (да, это редкий), нет - false (значит это не редкий). */
 
-const isRareBook = allBookList.map(object => {return object.yearOfIssue >= 2000 ? true : false})
+const checkRareBooks = allBookList.map(book => book.yearOfIssue >= 2000);
