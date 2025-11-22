@@ -18,7 +18,7 @@ console.log(bookList.includes('Великий Гэтсби'));
 Два вышеуказанных массива с помощью этой функции перевернуть.*/
 
 const getReverseArray = (arr) => {
-  return console.log(arr.reverse())
+  return arr.reverse();
 };
 
 getReverseArray(bookList);
@@ -35,17 +35,17 @@ const checkUserId = comments.map(user => ({...user, postId: user.id <= 5 ? 2 : 1
 
 /* Задание №6 - Перебрать массив, что бы объекты состояли только из айди и имени */
 
-const updateArray = comments.map(arr => arr = {id: arr.id, name: arr.name});
+const updateArray = comments.map(arr => ({id: arr.id, name: arr.name}));
 
 /* Задание №7 - Перебираем массив, добавляем объектам свойство isInvalid 
 и проверяем: если длина тела сообщения (body) больше 180 символов - устанавливаем true, меньше - false. */
 
-const validatedComments = comments.map(user => ({...user, isInvalid: user.body.length > 180 ? true : false  }))
+const validatedComments = comments.map(user => ({...user, isInvalid: user.body.length > 180}));
 
 /* Задание №8 - Почитать про метод массива reduce. 
 Используя его, вывести массив почт и провернуть тоже самое с помощью метода map */
 
-const mappedEmails = comments.map(user => user = {email: user.email});
+const mappedEmails = comments.map(user => ({email: user.email}));
 
 const showUserEmails = comments.reduce((acc, user) => {
   acc.push(user.email);
@@ -54,7 +54,5 @@ const showUserEmails = comments.reduce((acc, user) => {
 
 /* Задание №9 - Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке. */
 
-const mapToString = showUserEmails.map(email => email.toString());
+const mapToString = showUserEmails.toString();
 const convertArrayToString = showUserEmails.join(' ');
-console.log(toString);
-console.log(convertArrayToString);
