@@ -24,7 +24,7 @@ const openGooglePageButton = document.querySelector('#open-google-page-button');
 
 openGooglePageButton.addEventListener('click', openGoogle);
 
-function openGoogle () {
+function openGoogle() {
   const answer = confirm('Вы действительно хотите открыть Google?');
 
   if (answer === true) {
