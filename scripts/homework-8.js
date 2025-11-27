@@ -8,15 +8,16 @@ const productCardTemplate = document.getElementById('product-card-template');
 const cardsContainer = document.querySelector('.cards-container');
 const cardCount = +prompt('Укажите нужное кол-во карточек для вывода')
 
-function drawProductCards() {
-  if (isNaN(cardCount)) {
+function drawProductCards(card) {
+  if (isNaN(card)) {
     alert('Ошибка! Укажите кол-во числом!')
-} else if (cardCount > 5) {
+} else if (card > 5) {
     alert('Ошибка! Укажите число от 1 до 5!')
-} else if (cardCount < 5 || cardCount > 1) {
-    return productList.slice(0, cardCount).forEach(product => {
+} else if (card < 5 || card > 1) {
+    return productList.slice(0, card).forEach(product => {
     const productClone = productCardTemplate.content.cloneNode(true);
     productClone.querySelector('.product-image').src = `assets/${product.image}.svg`;
+    productClone.querySelector('.skin-type').textContent = product.skinType;
     productClone.querySelector('.product-name').textContent = product.productName;
     productClone.querySelector('#product-description').textContent = product.description;
     productClone.querySelector('#composition').innerHTML = product.composition.map(item => `<li>${item}</li>`).join('')
@@ -26,18 +27,17 @@ function drawProductCards() {
   )}
 }
 
-drawProductCards()
+drawProductCards(cardCount)
 
 // Задание №2 - Используя метод .reduce(), получить строку, которая состоит из названий продуктовых карточек, разделенных точкой с запятой
 
 const getProductCardsName = productList.reduce((acc, item) => {
-  return acc + item.productName + '; '
+  return acc + ` ${item.productName};`
 }, '');
 
 // Задание №3 - Используя метод .reduce(), получить массив объектов, где ключем является название продукта, а значением - его описание
 
 const getProductKeys = productList.reduce((acc, item) => {
-  const productKey = item.productName
-  acc.push({[productKey]: item.description})
+  acc.push({[item.productName]: item.description})
   return acc
 }, []);
