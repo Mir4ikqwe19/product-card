@@ -57,7 +57,7 @@ ul li::before {
 .cards-container {
   width: auto;
   justify-content: center;
-  height: 1191px;
+  height: auto;
   display: flex;
   margin: 30px 85px 116px 85px;
   gap: 45px;
