@@ -8,13 +8,13 @@ const productCardTemplate = document.getElementById('product-card-template');
 const cardsContainer = document.querySelector('.cards-container');
 const cardCount = +prompt('Укажите нужное кол-во карточек для вывода')
 
-function drawProductCards(card) {
-  if (isNaN(card)) {
+function drawProductCards(productCard) {
+  if (isNaN(productCard)) {
     alert('Ошибка! Укажите кол-во числом!')
-} else if (card > 5) {
+} else if (productCard > 5) {
     alert('Ошибка! Укажите число от 1 до 5!')
-} else if (card < 5 || card > 1) {
-    return productList.slice(0, card).forEach(product => {
+} else if (productCard < 5 || productCard > 1) {
+    return productList.slice(0, productCard).forEach(product => {
     const productClone = productCardTemplate.content.cloneNode(true);
     productClone.querySelector('.product-image').src = `assets/${product.image}.svg`;
     productClone.querySelector('.skin-type').textContent = product.skinType;
