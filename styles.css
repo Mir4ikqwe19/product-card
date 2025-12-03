@@ -230,10 +230,6 @@ ul li::before {
   gap: 16px;
 }
 
-.icon-container {
-  display: flex;
-}
-
 .product-cards {
 font-weight: 800;
 font-size: 28px;
@@ -244,14 +240,14 @@ letter-spacing: 0%;
 .marketing-text {
   font-weight: 400;
   font-size: 18px;
-  line-height: 154%;
+  line-height: 20px;
   letter-spacing: 0%;
 }
 
 .icon-container {
   margin-top: 32px;
   display: flex;
-  gap: 30.5px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -438,7 +434,7 @@ letter-spacing: 0%;
 }
 
 .modal-bg-img {
-  background-image: url(/assets/interior-design.jpg);
+  background-image: url("/assets/interior-design.jpg");
 }
 
 .modal-background.active {
