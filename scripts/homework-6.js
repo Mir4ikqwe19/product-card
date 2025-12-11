@@ -45,8 +45,6 @@ function getObjectProperty(object, property) {
   return console.log(object[property])
 };
 
-getObjectProperty(carInfo, "carModel");
-
 /* 5. Создать массив который содержит названия продуктов(просто строки) */
 
 const productList = ['Cucumber', 'Potato', 'Tomato', 'Cheese', 'Carrot'];
