@@ -1,6 +1,6 @@
 export class Modal {
   constructor(modal) {
-    this.modal = document.getElementById(`${modal}`);
+    this.modal = document.getElementById(modal);
     this.modalBackground = document.getElementById('modal-background');
   }
 

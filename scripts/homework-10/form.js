@@ -1,6 +1,6 @@
 export class Form {
   constructor(form) {
-    this.form = document.getElementById(`${form}`);
+    this.form = document.getElementById(form);
   }
 
   getFormValue() {
@@ -10,7 +10,7 @@ export class Form {
   }
 
   isValid() {
-    return console.log(this.form.checkValidity());
+    return this.form.checkValidity()
   }
 
   resetFormValue() {

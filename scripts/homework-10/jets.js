@@ -23,8 +23,8 @@ class FighterJet extends Jet {
   };
 };
 
-const transportPlane = new Jet ('ОКБ ИЛЬЮШИНА', 'ИЛ-76', '4 х Д-30КП', '46,6 м', '14,76 м');
-const fighterPlane = new FighterJet ('ОКБ СУХОЙ', 'СУ-30', '2 х Сатурн АЛ-31', '21,9 м', '6,36 м', '2,120 км/ч');
+const transportPlane = new Jet('ОКБ ИЛЬЮШИНА', 'ИЛ-76', '4 х Д-30КП', '46,6 м', '14,76 м');
+const fighterPlane = new FighterJet('ОКБ СУХОЙ', 'СУ-30', '2 х Сатурн АЛ-31', '21,9 м', '6,36 м', '2,120 км/ч');
 
 transportPlane.getSizeInfo();
 fighterPlane.getEngineInfo();
