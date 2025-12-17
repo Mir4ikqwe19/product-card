@@ -19,7 +19,7 @@ class FighterJet extends Jet {
   };
 
   getEngineInfo() {
-    return console.log(`Двигатель истребителя ${this.model}:${this.engine}, Максимальная скорость истребителя ${this.model}:${this.maxSpeed}`);
+    return console.log(`Двигатель истребителя ${this.model}: ${this.engine}, Максимальная скорость истребителя ${this.model}: ${this.maxSpeed}`);
   };
 };
 

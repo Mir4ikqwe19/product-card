@@ -1,5 +1,5 @@
-import { Modal } from "./homework-10/modal.js"
-import { Form } from "./homework-10/form.js";
+import { Modal } from "./homework-10/Modal.js"
+import { Form } from "./homework-10/Form.js";
 
 /* Задание №1 - добавить логику:
 email должен соответствовать стандартам (добавить валидацию), если он не заполнен - форма не отправляется.
