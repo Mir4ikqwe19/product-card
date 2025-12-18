@@ -15,8 +15,8 @@ export class Drink {
     return console.log(this.#temperature);
   }
 
-  #setTemperature(temperature) {
-    return temperature
+  setTemperature(value) {
+    return this.#temperature = value
   }
 
   #makeDrink() {
@@ -27,7 +27,7 @@ export class Drink {
     this.#makeDrink();
 
     setTimeout(() => {
-      console.log(`Температура готового напитка - ${this.name}, ${this.#temperature}`)
+      console.log(`Температура готового напитка - ${this.name}, ${this.#temperature}°C`)
     }, 10000);
 
     setTimeout(() => {

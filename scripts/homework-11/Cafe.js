@@ -14,7 +14,7 @@ export class Cafe {
   }
 
   orderDrink(drink) {
-    return drink
+    return drink.serveDrink()
   }
 
   getDrinkInfo(drink) {
@@ -29,4 +29,4 @@ const sanremo = new Cafe('Sanremo', 'г.Каспийск ул.Ленина 35а'
 
 sanremo.getInfo();
 sanremo.getDrinkInfo(cappuccino);
-sanremo.orderDrink(milkShake.serveDrink());
+sanremo.orderDrink(milkShake);

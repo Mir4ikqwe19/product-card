@@ -12,9 +12,6 @@ export class Tea extends Drink {
     console.log(`Сироп: ${this.syrup}, Ягоды: ${this.berry}`);
   }
 
-  #setTemperature(temperature) {
-    return temperature
-  }
 
   #makeTea() {
     setTimeout(() => {
@@ -26,7 +23,7 @@ export class Tea extends Drink {
     }, 3000);
 
     setTimeout(() => {
-      console.log(`Устанавливаем температуру бойлера ${this.#setTemperature('+100')}°C`)
+      console.log(`Устанавливаем температуру бойлера ${this.setTemperature('+100')}°C`)
     }, 4000);
 
     setTimeout(() => {

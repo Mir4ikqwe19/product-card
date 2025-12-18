@@ -7,10 +7,6 @@ export class Cocktail extends Drink {
     this.milk = milk;
   }
 
-  #setTemperature(temperature) {
-    return temperature
-  }
-
   getInfo() {
     super.getInfo();
     console.log(`Мороженное: ${this.iceCream}, Молоко: ${this.milk}`);
@@ -26,7 +22,7 @@ export class Cocktail extends Drink {
     }, 4000);
 
     setTimeout(() => {
-      console.log(`Учитываем просьбу гостя и делаем температуру коктейля потеплее ${this.#setTemperature('+5')}°C`)
+      console.log(`Учитываем просьбу гостя и делаем температуру коктейля потеплее ${this.setTemperature('+5')}°C`)
     }, 6000);
 
     setTimeout(() => {

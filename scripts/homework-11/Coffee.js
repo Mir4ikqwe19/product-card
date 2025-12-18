@@ -7,10 +7,6 @@ export class Coffee extends Drink {
     this.milk = milk;
   }
 
-  #setTemperature(temperature) {
-    return temperature
-  }
-
   getInfo() {
     super.getInfo();
     console.log(`Зёрна: ${this.grain}, Молоко: ${this.milk}`);
@@ -26,7 +22,7 @@ export class Coffee extends Drink {
     }, 4000);
 
     setTimeout(() => {
-      console.log(`Устанавливаем температуру кофемашинки ${this.#setTemperature('+94')}°C и включаем её`)
+      console.log(`Устанавливаем температуру кофемашинки +94°C и включаем её`)
     }, 6000);
 
     setTimeout(() => {
