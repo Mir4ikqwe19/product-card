@@ -1,0 +1,5 @@
+import "/scripts/homework-11/Drink.js"
+import "/scripts/homework-11/Coffee.js"
+import "/scripts/homework-11/Tea.js"
+import "/scripts/homework-11/Cocktail.js"
+import "/scripts/homework-11/Cafe.js"
