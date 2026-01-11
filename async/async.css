@@ -65,9 +65,9 @@
 }
 
 @keyframes dots {
-  0%   { content: ""; }
-  33%  { content: "."; }
-  66%  { content: ".."; }
+  0% { content: ""; }
+  33% { content: "."; }
+  66% { content: ".."; }
   100% { content: "..."; }
 }
 

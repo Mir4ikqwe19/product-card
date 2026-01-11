@@ -49,11 +49,11 @@ async function loadUsers() {
     hideLoading();
     renderUsers(data.users);
   } catch (error) {
-    loadingText.textContent = "Ошибка при загрузке данных";
+    showError()
   }
 }
 
-function init() {
+function initUsersCards() {
   const usersFromStorage = localStorage.getItem(usersKey);
   if (!usersFromStorage) {
     loadUsers();
@@ -63,7 +63,7 @@ function init() {
   }
 }
 
-init();
+initUsersCards();
 
 function deleteUser(id) {
   const users = JSON.parse(localStorage.getItem(usersKey));
