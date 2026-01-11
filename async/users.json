@@ -1,0 +1,47 @@
+{
+  "users": 
+  [
+    {
+      "id": 1,
+      "name": "Amir",
+      "surname": "Adilov",
+      "age": 23,
+      "email": "amir.adilov.97@bk.ru"
+    },
+    {
+      "id": 2,
+      "name": "Lewis",
+      "surname": "Hamilton",
+      "age": 40,
+      "email": "lewis.uhodi.iz.ferrari@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Jack",
+      "surname": "London",
+      "age": 40,
+      "email": "togda.emailov.ne_bilo@mail.ru"
+    },
+    {
+      "id": 4,
+      "name": "Fernando",
+      "surname": "Alonso",
+      "age": 44,
+      "email": "alonso_44@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Radjab",
+      "surname": "Gafurov",
+      "age": 25,
+      "email": "gafurov_r117@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Leonardo",
+      "surname": "Kots",
+      "age": 21,
+      "email": "leo_kkk21@gmail.com"
+    }
+  ]
+}
