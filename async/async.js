@@ -39,9 +39,10 @@ function showError() {
 async function loadUsers() {
   try {
     await new Promise(resolve => setTimeout(resolve, 2000));
-    const response = await fetch("./users.json");
+    const response = await fetch('./users.json');
+
     if (!response.ok) {
-      throw new Error("Ошибка загрузки");
+      throw new Error('Ошибка загрузки');
     }
 
     const data = await response.json();
@@ -49,7 +50,7 @@ async function loadUsers() {
     hideLoading();
     renderUsers(data.users);
   } catch (error) {
-    showError()
+    showError();
   }
 }
 
@@ -59,7 +60,7 @@ function initUsersCards() {
     loadUsers();
   } else {
     renderUsers(JSON.parse(usersFromStorage));
-    hideLoading()
+    hideLoading();
   }
 }
 
